@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Environments
+.venv/
+venv/
+.env
+.conda/
+
+# Secrets
+*.pem
+
+# Research data and generated artifacts
+data/raw/*
+data/processed/*
+artifacts/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!artifacts/.gitkeep
+
+# Local editor files
+.vscode/
+.idea/
