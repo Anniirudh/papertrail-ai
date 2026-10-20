@@ -13,7 +13,7 @@ def main():
     chunks=chunk_pages(
         pages,
         chunk_size=500,
-        overlap=80,
+        overlap=80
     )
 
     output_path.parent.mkdir(parents=True,exist_ok=True)
