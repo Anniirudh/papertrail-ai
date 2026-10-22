@@ -24,3 +24,10 @@ artifacts/*
 # Local editor files
 .vscode/
 .idea/
+
+# Temporary test files
+test_gemini.py
+test_chunking.py
+test_ingestion.py
+
+list_models.py
