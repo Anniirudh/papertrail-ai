@@ -4,6 +4,7 @@ import faiss
 
 from .bm25_retriever import load_chunks, build_bm25, retrieve
 from .embeddings import load_embedding_model, generate_embeddings
+from .reranker import load_reranker,rerank
 
 
 def reciprocal_rank_fusion(
@@ -186,6 +187,9 @@ def main():
     print("Loading embedding model...")
     model = load_embedding_model()
 
+    print("Loading cross-encoder reranker...")
+    reranker=load_reranker()
+
     print("Building FAISS dense index...")
     index = build_dense_index(chunks, model)
 
@@ -203,13 +207,20 @@ def main():
             continue
 
         try:
-            results = hybrid_search(
+            candidates = hybrid_search(
                 query,
                 chunks,
                 bm25,
                 model,
                 index,
                 candidate_k=10,
+                top_k=10,
+            )
+
+            results=rerank(
+                query,
+                candidates,
+                reranker,
                 top_k=5,
             )
 
