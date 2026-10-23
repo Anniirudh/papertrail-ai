@@ -30,3 +30,7 @@ test_gemini.py
 
 
 list_models.py
+
+# Generated evaluation reports
+eval/results/*
+!eval/results/.gitkeep
