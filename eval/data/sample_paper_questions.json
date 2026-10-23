@@ -1,0 +1,51 @@
+
+[
+  {
+    "id": "q01",
+    "question": "What is the main objective of the experiment?",
+    "relevant_pages": [2],
+    "answerable": true
+  },
+  {
+    "id": "q02",
+    "question": "How does the paper describe the Retrieval-Augmented Generation framework?",
+    "relevant_pages": [3],
+    "answerable": true
+  },
+  {
+    "id": "q03",
+    "question": "How is the average similarity score used to evaluate generated answers?",
+    "relevant_pages": [4],
+    "answerable": true
+  },
+  {
+    "id": "q04",
+    "question": "What were the eight experimental similarity scores reported in Table 1?",
+    "relevant_pages": [7],
+    "answerable": true
+  },
+  {
+    "id": "q05",
+    "question": "How did GPT and PaLM compare when context was and was not provided?",
+    "relevant_pages": [8],
+    "answerable": true
+  },
+  {
+    "id": "q06",
+    "question": "How did the models perform when paired with the other platform's similarity scoring configuration?",
+    "relevant_pages": [8],
+    "answerable": true
+  },
+  {
+    "id": "q07",
+    "question": "What limitations does the paper identify?",
+    "relevant_pages": [9],
+    "answerable": true
+  },
+  {
+    "id": "q08",
+    "question": "Who will win the next UEFA Champions League?",
+    "relevant_pages": [],
+    "answerable": false
+  }
+]
