@@ -1,66 +1,83 @@
+
 [
   {
     "id": "aq01",
     "question": "What is the main objective of the experiment?",
     "answerable": true,
     "expected_pages": [2],
-    "reference_answer": "",
-    "notes": "Write a concise reference answer after verifying the paper."
+    "required_pages": [],
+    "acceptable_pages": [2],
+    "reference_answer": "The experiment investigates how the modular design of a RAG framework affects performance and how interchangeable components can be evaluated.",
+    "notes": "Provisional label. Verify page 2 against the PDF. Page 2 is currently the candidate supporting page, not a mandatory citation."
   },
   {
     "id": "aq02",
     "question": "How does the paper describe the Retrieval-Augmented Generation framework?",
     "answerable": true,
-    "expected_pages": [3],
-    "reference_answer": "",
-    "notes": "Verify the relevant page and summarize the paper's description."
+    "expected_pages": [1, 2],
+    "required_pages": [],
+    "acceptable_pages": [1, 2],
+    "reference_answer": "The paper describes RAG as a modular framework whose components, including the base language model and similarity-scoring tools, can be interchanged to study their effects on performance.",
+    "notes": "Pages 1 and 2 are candidate supporting pages for the modularity description. Neither page is individually mandatory. Verify each claim against the PDF before finalizing the labels."
   },
   {
     "id": "aq03",
     "question": "How is the average similarity score used to evaluate generated answers?",
     "answerable": true,
     "expected_pages": [4],
-    "reference_answer": "",
-    "notes": "Verify the definition and how the score is used."
+    "required_pages": [],
+    "acceptable_pages": [4],
+    "reference_answer": "The average similarity score compares generated responses with reference answers and is used to evaluate and compare model configurations.",
+    "notes": "Provisional label. Verify the exact definition, calculation, and role of the metric on page 4. Update acceptable_pages if another page independently supports the answer."
   },
   {
     "id": "aq04",
     "question": "What were the eight experimental similarity scores reported in Table 1?",
     "answerable": true,
     "expected_pages": [7],
-    "reference_answer": "",
-    "notes": "Record all eight values exactly as printed."
+    "required_pages": [],
+    "acceptable_pages": [7],
+    "reference_answer": "The eight reported scores are 0.75, 0.92, 0.93, 0.88, 0.997, 0.996, 0.91, and 0.897.",
+    "notes": "Provisional label. Verify all eight values against Table 1 on page 7, including their exact printed precision and configuration mapping. A correct answer must preserve the reported values."
   },
   {
     "id": "aq05",
     "question": "How did GPT and PaLM compare when context was and was not provided?",
     "answerable": true,
     "expected_pages": [8],
-    "reference_answer": "",
-    "notes": "Capture the comparison and the reported conditions."
+    "required_pages": [],
+    "acceptable_pages": [8],
+    "reference_answer": "GPT performed slightly better in the reported comparison with context, while PaLM performed better in the reported comparisons without context.",
+    "notes": "Provisional label. Verify the comparison, exact configurations, and reported scores on page 8. Do not generalize beyond the experimental conditions described in the paper."
   },
   {
     "id": "aq06",
-    "question": "How did the models perform when paired with the other platform's similarity scoring configuration?",
+    "question": "How did the models perform when paired with the other platform's similarity-scoring configuration?",
     "answerable": true,
     "expected_pages": [8],
-    "reference_answer": "",
-    "notes": "Verify the cross-platform comparison."
+    "required_pages": [],
+    "acceptable_pages": [8],
+    "reference_answer": "PaLM achieved a similarity score of 0.93 with OpenAI's similarity-scoring configuration, while GPT achieved 0.92 with PaLM's configuration.",
+    "notes": "Provisional label. Verify both values and the platform-to-configuration mapping against page 8 before treating this reference answer as gold."
   },
   {
     "id": "aq07",
     "question": "What limitations does the paper identify?",
     "answerable": true,
     "expected_pages": [9],
-    "reference_answer": "",
-    "notes": "List only limitations explicitly identified in the paper."
+    "required_pages": [],
+    "acceptable_pages": [9],
+    "reference_answer": "The paper identifies dependence on training-data quality, the potential for low-quality data to introduce bias, and variation in results when different datasets are used.",
+    "notes": "Provisional label. Verify that each limitation is explicitly discussed on page 9. Include other pages in acceptable_pages only if they independently support the answer."
   },
   {
     "id": "aq08",
     "question": "Who will win the next UEFA Champions League?",
     "answerable": false,
     "expected_pages": [],
+    "required_pages": [],
+    "acceptable_pages": [],
     "reference_answer": "",
-    "notes": "The paper should not be treated as evidence for this prediction."
+    "notes": "Unanswerable from the research paper. The expected behavior is to abstain without citations."
   }
 ]
