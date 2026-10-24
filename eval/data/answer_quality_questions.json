@@ -1,0 +1,66 @@
+[
+  {
+    "id": "aq01",
+    "question": "What is the main objective of the experiment?",
+    "answerable": true,
+    "expected_pages": [2],
+    "reference_answer": "",
+    "notes": "Write a concise reference answer after verifying the paper."
+  },
+  {
+    "id": "aq02",
+    "question": "How does the paper describe the Retrieval-Augmented Generation framework?",
+    "answerable": true,
+    "expected_pages": [3],
+    "reference_answer": "",
+    "notes": "Verify the relevant page and summarize the paper's description."
+  },
+  {
+    "id": "aq03",
+    "question": "How is the average similarity score used to evaluate generated answers?",
+    "answerable": true,
+    "expected_pages": [4],
+    "reference_answer": "",
+    "notes": "Verify the definition and how the score is used."
+  },
+  {
+    "id": "aq04",
+    "question": "What were the eight experimental similarity scores reported in Table 1?",
+    "answerable": true,
+    "expected_pages": [7],
+    "reference_answer": "",
+    "notes": "Record all eight values exactly as printed."
+  },
+  {
+    "id": "aq05",
+    "question": "How did GPT and PaLM compare when context was and was not provided?",
+    "answerable": true,
+    "expected_pages": [8],
+    "reference_answer": "",
+    "notes": "Capture the comparison and the reported conditions."
+  },
+  {
+    "id": "aq06",
+    "question": "How did the models perform when paired with the other platform's similarity scoring configuration?",
+    "answerable": true,
+    "expected_pages": [8],
+    "reference_answer": "",
+    "notes": "Verify the cross-platform comparison."
+  },
+  {
+    "id": "aq07",
+    "question": "What limitations does the paper identify?",
+    "answerable": true,
+    "expected_pages": [9],
+    "reference_answer": "",
+    "notes": "List only limitations explicitly identified in the paper."
+  },
+  {
+    "id": "aq08",
+    "question": "Who will win the next UEFA Champions League?",
+    "answerable": false,
+    "expected_pages": [],
+    "reference_answer": "",
+    "notes": "The paper should not be treated as evidence for this prediction."
+  }
+]
